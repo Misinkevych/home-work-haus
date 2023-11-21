@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/burger.css">
+<link rel="stylesheet" href="css/media-index.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
 <title>Home-page</title>
 </head>
@@ -13,7 +15,10 @@
     <!-- ----Menu----- -->
     <header class="heder">
         <nav class="page-nav container">
-    
+
+     <div class="burger">
+                <span></span>
+            </div>
             <ul class="site-navigation  ">
               <li>
                 <a href="index.html" class="site-item" >ГОЛОВНА</a>
@@ -45,20 +50,20 @@
           </nav>
 
           <div class="block_container">
-            <div class="site_logo tiny_block">
+            <div class="site_logo tiny_block tiny_block-1">
                <a href="#"> <img src="img/logo/logo.png" alt="Хата плюс"></a>
             </div>
 
-<div class="tiny_block block_contact-1">
+<div class="tiny_block tiny_block-1 block_contact-1">
     <p > <img class="phone" src="./img/social-contact/phone.png"><a href="#">+38(097) 100-25-25</a></p>
     <p><a class="phone-one" href="#">+38(097) 100-25-25</a></p>
 </div>
-<div class="tiny_block block_contact-2">
+<div class="tiny_block tiny_block-1 block_contact-2">
     <p class="underline"><a href="#"><img class="phone" src="./img/social-contact/email.png">hataplus@hata.com.ua</a></p>
     <p><a class="phone-too" href="#"><img class="phone" src="./img/social-contact/skype.png">hataplus</a></p>
 </div>
 
-<div class="tiny_block block_buttom">
+<div class="tiny_block tiny_block-1 block_buttom">
    <button class="block_buttom-contact"> <a class="butoom" href="#">Замовити дзвінок</a></button>
 </div>
 
@@ -88,6 +93,7 @@
             
         </article>
         </section>
+        <hr class="hr-border">
         <h2 class="site_title-2">Популярні проекти</h2>
         <section class="container_figure">
 
@@ -248,15 +254,15 @@
             
                 <div class=" footer_list">
                     <ul class="footer_list-title">
-                        <li class="footer_list-title-1" ><img class="phone" src="./img/social-contact/phone.png"><a href="#">+38(097) 100-25-25</a></li>
-                        <li class="footer_list-title-1   footer-title"><a  class="" href="#">+38(097) 100-25-25</a></li>
+                        <li class="footer_list-title-1" ><img class="phone-f" src="./img/social-contact/phone.png"><a href="#">+38(097) 100-25-25</a></li>
+                        <li class="footer_list-title-1  "><a  class=" footer-title" href="#">+38(097) 100-25-25</a></li>
                     </ul>
                 </div>
          
                 <div class="footer_list">
                     <ul class="footer_list-title">
                         <li class="footer_list-title-2 underline" ><a class="underline" href="#"><img class="phone" src="./img/social-contact/email.png">hataplus@hata.com.ua</a></li>
-                        <li class="footer_list-title-2"><a class="" href="#"><img class="phone" src="./img/social-contact/skype.png">hataplus</a></li>
+                        <li class="footer_list-title-2"><a class="" href="#"><img class="phone-s" src="./img/social-contact/skype.png">hataplus</a></li>
             
                     </ul>
                 </div>
@@ -267,5 +273,14 @@
     <p>&copy;Будівельна компанія "Хата Плюс" 2018.</p>
 </div>
     </footer>
+    <script>
+        let burger = document.querySelector(".burger");
+            let menu = document.querySelector(".site-navigation");
+            
+            burger.onclick = () => {
+                menu.classList.toggle("show_menu")
+                burger.classList.toggle("burger_close_button")
+            
+            }</script>
 </body>
 </html>

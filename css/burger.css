@@ -1,0 +1,64 @@
+
+.burger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: white 2px solid;
+    border-radius: 3px;
+  }
+  
+  .burger span,
+  .burger span::before,
+  .burger span::after {
+    display: block;  
+    width: 20px;
+    height: 1px;
+    border: white 1px solid;
+    box-sizing: border-box;
+  
+    transition: all 0.5s ease-in;
+  }
+  
+  .burger span{
+    position: relative;  
+  }
+  
+  .burger span::before,
+  .burger span::after{
+    content: "";
+    position: absolute; 
+    left: -1px;
+  }
+  
+  .burger span::before{
+    top: -8px;
+  }
+  .burger span::after{
+    top: 6px;
+  }
+  
+  .burger_close_button span{
+    width: 1px;
+  }
+  
+  .burger_close_button span::before{
+    transform: rotate(45deg);
+    top: -1px;
+    left: -10px;
+  }
+  
+  .burger_close_button span::after{
+    transform: rotate(-45deg);
+    top: 0px;
+    left: -10px;
+  }
+  
+
+  
+  @media screen and (min-width:728px) {
+    .burger{
+       display: none;
+    }
+}  

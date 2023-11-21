@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/burger.css">
+    <link rel="stylesheet" href="css/media-index.css">
+
+
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
 <title>praice</title>
 </head>
@@ -13,7 +17,10 @@
     <!-- ----Menu----- -->
     <header class="heder">
         <nav class="page-nav container">
-    
+            <div class="burger">
+                <span></span>
+            </div>
+
             <ul class="site-navigation  ">
               <li>
                 <a class="site-item" href="index.html">ГОЛОВНА</a>
@@ -45,29 +52,25 @@
           </nav>
 
           <div class="block_container">
-            <div class="site_logo tiny_block">
+            <div class="site_logo tiny_block tiny_block-1">
                <a href="#"> <img src="img/logo/logo.png" alt="Хата плюс"></a>
             </div>
 
-<div class="tiny_block block_contact-1">
+<div class="tiny_block tiny_block-1 block_contact-1">
     <p > <img class="phone" src="./img/social-contact/phone.png"><a href="#">+38(097) 100-25-25</a></p>
     <p><a class="phone-one" href="#">+38(097) 100-25-25</a></p>
 </div>
-<div class="tiny_block block_contact-2">
+<div class="tiny_block tiny_block-1 block_contact-2">
     <p class="underline"><a href="#"><img class="phone" src="./img/social-contact/email.png">hataplus@hata.com.ua</a></p>
     <p><a class="phone-too" href="#"><img class="phone" src="./img/social-contact/skype.png">hataplus</a></p>
 </div>
 
-<div class="tiny_block block_buttom">
+<div class="tiny_block tiny_block-1 block_buttom">
    <button class="block_buttom-contact"> <a class="butoom" href="#">Замовити дзвінок</a></button>
 </div>
 
           </div>
-<!-- <div class="baner">
-<p class="text_1">ПРОПОЗИЦІЯ МІСЯЦЯ</p>
-<p class="text_2">Ми пропонуємо великий вибір котеджів "під ключ" за самими низькими цінами</p>
-<p class="text_3">5999 грн/м <sup>2</sup></p>
-</div> -->
+
     </header>
 
     <main class="container main">
@@ -79,8 +82,7 @@
                 <p class="site-text">Кожен котедж оснащений комфортабельними меблями, супутниковим ТБ, душем, туалетом, холодильником, WI-FI зоною.<br>
                     Послуга може бути надана кожному з наших гостей, незалежно від терміну проживання в готелі та категорії обраного номера. 
                 </p>
-                <!-- <p class="site-text"> 
-                </p> -->
+            
             </article>
    <table>
     <thead class="title">
@@ -153,7 +155,7 @@
         </section>
         <hr class="hr-border">
         <h2 class="site_title-2">Популярні проекти</h2>
-        <section class="container-praice-figure">
+        <section class="container_figure">
 
             
 <figure class="tiny_block">
@@ -187,108 +189,7 @@
 </figure>
 </section>
 </div>
-<!-- <Aside class="tiny_block side_bar">
-    <ul class="menu-aside"> 
-        <p class="side_bar-title">Критерії проектів</p>
 
-        
-        <li > 
-        <a class="aside-menu_item aside-menu_item--orange-hover" href="#">Генеральний план</a> 
-        <ul class="drop_down-list">
-
-            <li><a href="#" class="aside-menu_item">Продані</a></li>
-            <li><a href="#" class="aside-menu_item">Продані</a></li>
-            <li><a href="#" class="aside-menu_item">Продані</a></li></ul>
-           
-            
-        </li>
-
-        
-        <li > 
-            <a class="aside-menu_item aside-menu_item--orange-hover" href="#">Навколишнє середовище</a> 
-            <ul class="drop_down-list">
-                
-                <li><a href="#" class="aside-menu_item">Продані</a></li>
-                <li><a href="#" class="aside-menu_item">Продані</a></li>
-                <li><a href="#" class="aside-menu_item">Продані</a></li></ul>
-               
-                
-            </li>
-
-
-            <li > 
-                <a class="aside-menu_item aside-menu_item--orange-hover" href="#">Умови придбання </a> 
-                <ul class="drop_down-list">
-        
-                    <li><a href="#" class="aside-menu_item">Продані</a></li>
-                    <li><a href="#" class="aside-menu_item">Продані</a></li>
-                    <li><a href="#" class="aside-menu_item">Продані</a></li></ul>
-                    
-                    
-                </li>
-
-                
-                <li > 
-                    <a class="aside-menu_item aside-menu_item--orange-hover" href="#">Загородні котеджі</a> 
-                    <ul class="drop_down-list">
-            
-                        <li><a href="#" class="aside-menu_item">Продані</a></li>
-                        <li><a href="#" class="aside-menu_item">Продані</a></li>
-                        <li><a href="#" class="aside-menu_item">Продані</a></li></ul>
-                       
-                        
-                    </li>
-
-
-                    <li > 
-                        <a class="aside-menu_item aside-menu_item--orange-hover" href="#">Інфраструктура </a> 
-                        <ul class="drop_down-list">
-                
-                            <li><a href="#" class="aside-menu_item">Продані</a></li>
-                            <li><a href="#" class="aside-menu_item">Продані</a></li>
-                            <li><a href="#" class="aside-menu_item">Продані</a></li></ul>
-                           
-                            
-                        </li>
-
-
-                        <li > 
-                            <a class="aside-menu_item aside-menu_item--orange-hover" href="#">Готові будинки</a> 
-                            <ul class="drop_down-list">
-                    
-                                <li><a href="#" class="aside-menu_item">Продані</a></li>
-                                <li><a href="#" class="aside-menu_item">Продані</a></li>
-                                <li><a href="#" class="aside-menu_item">Продані</a></li></ul>
-                               
-                                
-                            </li> -->
-    <!-- <li class=" bef-1"><a class="side_bar-list" href="#">Навколишнє середовище</a>
-        <ul class="drop_down-list">
-            <li><a  class="drop_down-list-1">Продані</a></li>
-            <li><a  class="drop_down-list-1">Продані</a></li>
-            <li><a  class="drop_down-list-1">Продані</a></li></ul></li>
-    <li class="bef, bef-2" ><a class="side_bar-list" href="#">Умови придбання</a>
-        <ul class="drop_down-list">
-            <li><a  class="drop_down-list-1">Продані</a></li>
-            <li><a  class="drop_down-list-1">Продані</a></li>
-            <li><a  class="drop_down-list-1">Продані</a></li></ul></li>
-    <li class="bef, bef-3"><a class="side_bar-list" href="#">Загородні котеджі</a>
-        <ul class="drop_down-list">
-            <li><a  class="drop_down-list-1">Продані</a></li>
-            <li><a  class="drop_down-list-1">Продані</a></li>
-            <li><a  class="drop_down-list-1">Продані</a></li></ul></li>
-    <li class="bef, bef-4"><a class="side_bar-list" href="#">Інфраструктура</a>
-        <ul class="drop_down-list">
-            <li><a  class="drop_down-list-1">Продані</a></li>
-            <li><a  class="drop_down-list-1">Продані</a></li>
-            <li><a  class="drop_down-list-1">Продані</a></li></ul></li>
-    <li class="bef, bef-5"><a class="side_bar-list" href="#">Готові будинки</a>
-        <ul class="drop_down-list">
-            <li><a  class="drop_down-list-1">Продані</a></li>
-            <li><a  class="drop_do,wn-list-1">Продані</a></li>
-            <li><a  class="drop_down-list-1">Продані</a></li></ul></li> -->
-</ul>
-</Aside>
 
     </main>
 
@@ -317,7 +218,7 @@
             
                 <div class=" footer_list">
                     <ul class="footer_list-title">
-                        <li class="footer_list-title-1" ><img class="phone" src="./img/social-contact/phone.png"><a href="#">+38(097) 100-25-25</a></li>
+                        <li class="footer_list-title-1" ><img class="phone-f" src="./img/social-contact/phone.png"><a href="#">+38(097) 100-25-25</a></li>
                         <li class="footer_list-title-1   footer-title"><a  class="" href="#">+38(097) 100-25-25</a></li>
                     </ul>
                 </div>
@@ -325,7 +226,7 @@
                 <div class="footer_list">
                     <ul class="footer_list-title">
                         <li class="footer_list-title-2 underline" ><a class="underline" href="#"><img class="phone" src="./img/social-contact/email.png">hataplus@hata.com.ua</a></li>
-                        <li class="footer_list-title-2"><a class="" href="#"><img class="phone" src="./img/social-contact/skype.png">hataplus</a></li>
+                        <li class="footer_list-title-2"><a class="" href="#"><img class="phone-s" src="./img/social-contact/skype.png">hataplus</a></li>
             
                     </ul>
                 </div>
@@ -336,5 +237,14 @@
     <p>&copy;Будівельна компанія "Хата Плюс" 2018.</p>
 </div>
     </footer>
+    <script>
+        let burger = document.querySelector(".burger");
+            let menu = document.querySelector(".site-navigation");
+            
+            burger.onclick = () => {
+                menu.classList.toggle("show_menu")
+                burger.classList.toggle("burger_close_button")
+            
+            }</script>
 </body>
 </html>
